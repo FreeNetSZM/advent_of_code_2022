@@ -18,7 +18,7 @@ def process_bags(bags):
     return result
 
 
-def process_bags2(bags, number_ingroup = 3):
+def process_bags2(bags, number_ingroup=3):
     i = 0
     result = 0
     while i < len(bags):
