@@ -1,7 +1,6 @@
 # https://adventofcode.com/2022/day/8
 
 
-
 FILE_NAME = "input.txt"
 
 
@@ -12,6 +11,7 @@ def process_input(input):
             tmp = heigh_value(i, j, input, len(input))
             result = tmp if tmp > result else result
     return result
+
 
 def process_input1(input):
     result = 0
@@ -25,7 +25,8 @@ def process_input1(input):
 def heigh_value1(row, column, input, max_size):
     directions = ["r", "l", "u", "d"]
     for i in range(1, max_size):
-        tmp_directions = directions.copy()          # dočasná kópia kvoly iterácii. Použiť copy() aby to neukazovalo na pôvodný directions 
+        # dočasná kópia kvoly iterácii. Použiť copy() aby to neukazovalo na pôvodný directions
+        tmp_directions = directions.copy()
         for direction in tmp_directions:
             if direction == "r":
                 if column + i == max_size:
@@ -51,6 +52,7 @@ def heigh_value1(row, column, input, max_size):
             return False
     # print("[" + str(row) + "," + str(column) + "] -> " + str(res))
     return False
+
 
 def heigh_value(row, column, input, max_size):
     directions = ["r", "l", "u", "d"]
