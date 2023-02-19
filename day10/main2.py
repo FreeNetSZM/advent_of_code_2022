@@ -1,3 +1,5 @@
+# https://adventofcode.com/2022/day/10
+
 SCREEN_HEIGHT = 6
 SCREEN_WIDTH = 40
 FILE_NAME = "input.txt"

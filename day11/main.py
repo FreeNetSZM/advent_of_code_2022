@@ -1,3 +1,5 @@
+# https://adventofcode.com/2022/day/11
+
 from dataclasses import dataclass
 from collections import deque
 from operator import add, mul
